@@ -502,7 +502,7 @@
         };
         
         // Homework Data
-        let homeworkList = [
+        let homeworkList = JSON.parse(localStorage.getItem('homeworkList')) || [
             { id: 1, subject: 'PHM 281', task: 'Complete Chapter 5 Problems', dueDate: '2025-12-30', completed: false },
             { id: 2, subject: 'EEM 201 c languge', task: 'Lab Report Submission', dueDate: '2025-12-26', completed: false },
             { id: 3, subject: 'MAM 281 eng. mathamatics', task: 'Assignment 2', dueDate: '2025-12-28', completed: false }
