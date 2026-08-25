@@ -455,52 +455,67 @@
         // Timetable Data
         // Teacher ki image URL yaha add karo
         const timetable = {
-            MON: [
-                { time: '7:55-8:50', subject: 'Phy Lab B1/B2', teacher: 'Lab Instructor', room: 'Physics Lab', image: 'https://via.placeholder.com/80/4A90E2/ffffff?text=Lab' },
-                { time: '10:30-11:25', subject: 'PHM 281', teacher: 'Dr. Shiroman Prakash', room: 'LT1', image: 'SPrakash.jpg' },
-                { time: '11:25-12:20', subject: 'EEM 201 C Language', teacher: 'Prof. TK', room: 'LT1', image: 'sir.jpg' },
-                { time: '12:20-1:15', subject: 'EEM 202 Electrical Eng.', teacher: 'Prof. Ajay Kumar Saxena', room: 'LT1', image: 'aks.jpg' },
-                { time: '1:15-2:10', subject: 'MEM 201 Eng. Thermodynamics', teacher: 'Dr. Manoj Dixit', room: 'LT1', image: 'md.jpg' },
-                { time: '2:10-3:05', subject: 'ANCILLARY COURSE', teacher: 'Prof. DES H2', room: 'LT1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=DES' },
-                { time: '3:05-4:00', subject: 'ENV SC', teacher: 'Prof. TPS', room: 'LT1', image: 'https://via.placeholder.com/80/27AE60/ffffff?text=TPS' }
-            ],
-            TUE: [
-                { time: '10:30-11:25', subject: 'PHM 281', teacher: 'Dr. Shiroman Prakash', room: 'LT1', image: 'SPrakash.jpg' },
-                { time: '11:25-12:20', subject: 'MAM 281 Eng. Mathematics', teacher: 'Prof. Mathematics', room: 'LT1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=Math' },
-                { time: '12:20-1:15', subject: 'EEM 202 Electrical Eng.', teacher: 'Prof. Ajay Kumar Saxena', room: 'LT1', image: 'aks.jpg' },
-                { time: '2:10-3:05', subject: 'ANCILLARY COURSE', teacher: 'Prof. DES H1', room: 'LT1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=DES' },
-                { time: '3:05-4:00', subject: 'GAMES', teacher: 'Mohak/Abhijit', room: 'Ground', image: 'https://via.placeholder.com/80/2ECC71/ffffff?text=Sports' },
-                { time: '4:00-5:00', subject: 'CCA', teacher: 'CCA Coordinator', room: 'Various', image: 'https://via.placeholder.com/80/95A5A6/ffffff?text=CCA' }
-            ],
-            WED: [
-                { time: '10:30-11:25', subject: 'PHM 281', teacher: 'Dr. Shiroman Prakash', room: 'LT1', image: 'SPrakash.jpg' },
-                { time: '11:25-12:20', subject: 'EEM 202 Electrical Eng.', teacher: 'Prof. Ajay Kumar Saxena', room: 'LT1', image: 'aks.jpg' },
-                { time: '12:20-1:15', subject: 'MAM 281 Eng. Mathematics', teacher: 'Prof. Mathematics', room: 'LT1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=Math' },
-                { time: '1:15-2:10', subject: 'MEM 202 Eng. Mechanics', teacher: 'Prof. Atul Suri', room: 'LT1', image: 'atul.jpg' },
-                { time: '2:10-3:05', subject: 'ANCILLARY COURSE', teacher: 'Prof. DES H1', room: 'LT1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=DES' },
-                { time: '3:05-4:00', subject: 'RDC 282 Social Service', teacher: 'Mohak & Rajesh', room: 'LT1', image: 'https://via.placeholder.com/80/D35400/ffffff?text=RDC' }
-            ],
-            THU: [
-                { time: '10:30-11:25', subject: 'PHY GD', teacher: 'Physics Faculty', room: 'LT1', image: 'https://via.placeholder.com/80/8E44AD/ffffff?text=PHY' },
-                { time: '12:20-1:15', subject: 'MAM 281 Eng. Mathematics', teacher: 'Prof. Mathematics', room: 'LT1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=Math' },
-                { time: '1:15-2:10', subject: 'MEM 201 Eng. Thermodynamics', teacher: 'Dr. Manoj Dixit', room: 'LT1', image: 'md.jpg' },
-                { time: '2:10-3:05', subject: 'MEM 203 Eng. Drawing', teacher: 'Prof. EC CC AD', room: 'LT1', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=ENGG' }
-            ],
-            FRI: [
-                { time: '10:30-11:25', subject: 'MEM 201 Eng. Thermodynamics', teacher: 'Dr. Manoj Dixit', room: 'LT1', image: 'md.jpg' },
-                { time: '11:25-12:20', subject: 'MEM 202 Eng. Mechanics', teacher: 'Prof. Atul Suri', room: 'LT1', image: 'atul.jpg' },
-                { time: '12:20-1:15', subject: 'EEM 201 C Language', teacher: 'Prof. TK', room: 'LT1', image: 'https://via.placeholder.com/80/3498DB/ffffff?text=TK' },
-                { time: '2:10-3:05', subject: 'RDC 281', teacher: 'Prof. AG OP Satya Prkash', room: 'LT1', image: 'https://via.placeholder.com/80/2980B9/ffffff?text=AG' }
-            ],
-            SAT: [
-                { time: '10:30-11:25', subject: 'EEM 201 C Language', teacher: 'Prof. TK', room: 'LT1', image: 'https://via.placeholder.com/80/3498DB/ffffff?text=TK' },
-                { time: '11:25-12:20', subject: 'MEM 202 Eng. Mechanics', teacher: 'Prof. Atul Suri', room: 'LT1', image: 'atul.jpg' },
-                { time: '12:20-1:15', subject: 'GKC 281', teacher: 'Prof. Sudhir', room: 'LT1', image: 'https://via.placeholder.com/80/7F8C8D/ffffff?text=Sudhir' },
-                { time: '2:10-3:05', subject: 'MEM 204 WORKSHOP', teacher: 'Prof. NLM', room: 'Workshop', image: 'https://via.placeholder.com/80/34495E/ffffff?text=NLM' }
-            ],
-            SUN: []
-        };
-        
+    MON: [
+        { time: '7:00-7:55', subject: 'EGC 381', teacher: '—', room: '—', image: 'https://via.placeholder.com/80/95A5A6/ffffff?text=EGC' },
+        { time: '7:55-8:50', subject: 'MEM 303 Eng. Mechanics', teacher: 'Prof. GD', room: 'SOE H1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=GD' },
+        { time: '8:50-9:45', subject: 'EEM 301 Basic Elec. Eng.', teacher: 'Prof. VS', room: 'LT2', image: 'https://via.placeholder.com/80/3498DB/ffffff?text=VS' },
+        { time: '10:30-11:25', subject: 'EEM 304 C Language Lab', teacher: 'Prof. TK', room: 'CS Lab', image: 'https://via.placeholder.com/80/2ECC71/ffffff?text=TK' },
+        { time: '11:25-12:20', subject: 'EEM 304 C Language Lab', teacher: 'Prof. TK', room: 'CS Lab', image: 'https://via.placeholder.com/80/2ECC71/ffffff?text=TK' },
+        { time: '12:20-1:15', subject: 'EEM 302 / MEM 305 BE Lab / Thermal Lab', teacher: 'Prof. RKC / Dr. MD', room: 'BE Lab / Thermal Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '1:15-2:10', subject: 'EEM 302 / MEM 305 BE Lab / Thermal Lab', teacher: 'Prof. RKC / Dr. MD', room: 'BE Lab / Thermal Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '2:10-3:05', subject: 'ENH 381', teacher: 'Prof. Shashi', room: 'DES Block', image: 'https://via.placeholder.com/80/8E44AD/ffffff?text=ENH' }
+    ],
+    TUE: [
+        { time: '8:50-9:45', subject: 'EEM 301 Basic Elec. Eng.', teacher: 'Prof. VS', room: 'LT2', image: 'https://via.placeholder.com/80/3498DB/ffffff?text=VS' },
+        { time: '10:30-11:25', subject: 'MEM 301 Eng. Drawing', teacher: 'Prof. ASHARMA', room: 'SOE H1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=AS' },
+        { time: '11:25-12:20', subject: 'MEM 311 Fluid Mechanics', teacher: 'Prof. ASAHAI', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=AH' },
+        { time: '12:20-1:15', subject: 'MEM 312 Hydraulics Lab', teacher: 'Prof. ASAHAI', room: 'Hyd Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '1:15-2:10', subject: 'MEM 312 Hydraulics Lab', teacher: 'Prof. ASAHAI', room: 'Hyd Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '2:10-3:05', subject: 'ENH 381', teacher: 'Prof. Shashi', room: 'DES Block', image: 'https://via.placeholder.com/80/8E44AD/ffffff?text=ENH' }
+    ],
+    WED: [
+        { time: '7:00-7:55', subject: 'EGC 381', teacher: '—', room: '—', image: 'https://via.placeholder.com/80/95A5A6/ffffff?text=EGC' },
+        { time: '7:55-8:50', subject: 'MEM 312 Fluid Mechanics', teacher: 'Prof. ASAHAI', room: '—', image: 'https://via.placeholder.com/80/16A085/ffffff?text=AH' },
+        { time: '8:50-9:45', subject: 'EEM 301 / MEM 312 BE Eng. / Fluid Mech.', teacher: 'Prof. VS / ASAHAI', room: 'SOE H1', image: 'https://via.placeholder.com/80/3498DB/ffffff?text=VS' },
+        { time: '10:30-11:25', subject: 'MEM 301 Eng. Drawing', teacher: 'Prof. ASHARMA', room: 'SOE H1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=AS' },
+        { time: '11:25-12:20', subject: 'MEM 311 Fluid Mechanics', teacher: 'Prof. ASAHAI', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=AH' },
+        { time: '12:20-1:15', subject: 'EEM 303 Elec. Machines', teacher: 'Prof. ACK', room: 'SOE H1', image: 'https://via.placeholder.com/80/D35400/ffffff?text=ACK' },
+        { time: '1:15-2:10', subject: 'MAM 381', teacher: '—', room: 'AH / SOE H1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=MAM' },
+        { time: '2:10-3:05', subject: 'EEM 303 / EEM 301 Elec. Machines / BE Lab', teacher: 'Prof. TK / GSB', room: 'R7 / SOE H1', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' }
+    ],
+    THU: [
+        { time: '7:00-7:55', subject: 'MEM 305 Thermal Lab', teacher: 'Dr. MD', room: 'Thermal Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '7:55-8:50', subject: 'MEM 305 Thermal Lab', teacher: 'Dr. MD', room: 'Thermal Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '8:50-9:45', subject: 'MEM 303 Eng. Mechanics', teacher: 'Prof. GD', room: 'SOE H1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=GD' },
+        { time: '10:30-11:25', subject: 'EEM 303 Elec. Machines', teacher: 'Prof. ACK', room: 'SOE H1', image: 'https://via.placeholder.com/80/D35400/ffffff?text=ACK' },
+        { time: '11:25-12:20', subject: 'MAM 381', teacher: '—', room: 'AH / SOE H1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=MAM' },
+        { time: '12:20-1:15', subject: 'EEM 303 / EEM 301 Elec. Machines / BE Lab', teacher: 'Prof. TK / GSB', room: 'R7 / SOE H1', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '1:15-2:10', subject: 'MAM 381', teacher: '—', room: 'AH / SOE H1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=MAM' },
+        { time: '2:10-3:05', subject: 'EEM 302 BE Lab', teacher: 'Prof. RKC', room: 'BE Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '3:05-4:00', subject: 'EEM 302 BE Lab', teacher: 'Prof. RKC', room: 'BE Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' }
+    ],
+    FRI: [
+        { time: '7:00-7:55', subject: 'EEM 302 BE Eng. Lab', teacher: 'Prof. GSB', room: 'BE Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '7:55-8:50', subject: 'EEM 302 BE Eng. Lab', teacher: 'Prof. GSB', room: 'BE Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '8:50-9:45', subject: 'EEM 302 BE Eng. Lab', teacher: 'Prof. GSB', room: 'BE Lab', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '10:30-11:25', subject: 'MEM 304 Fluid Mechanics', teacher: 'Dr. MD', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=MD' },
+        { time: '11:25-12:20', subject: 'MEM 311 Fluid Mechanics', teacher: 'Prof. ASAHAI', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=AH' },
+        { time: '12:20-1:15', subject: 'MEM 303 Eng. Mechanics', teacher: 'Prof. GD', room: 'SOE H1', image: 'https://via.placeholder.com/80/E67E22/ffffff?text=GD' },
+        { time: '1:15-2:10', subject: 'MEM 304 Fluid Mechanics', teacher: 'Dr. MD', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=MD' },
+        { time: '2:10-3:05', subject: 'ENH 381', teacher: 'Prof. Shashi', room: 'DES Block', image: 'https://via.placeholder.com/80/8E44AD/ffffff?text=ENH' }
+    ],
+    SAT: [
+        { time: '7:00-7:55', subject: 'EEM 304 C Language Lab', teacher: 'Prof. ACK', room: 'CS Lab', image: 'https://via.placeholder.com/80/2ECC71/ffffff?text=ACK' },
+        { time: '7:55-8:50', subject: 'EEM 304 C Language Lab', teacher: 'Prof. ACK', room: 'CS Lab', image: 'https://via.placeholder.com/80/2ECC71/ffffff?text=ACK' },
+        { time: '8:50-9:45', subject: 'MEM 304 Fluid Mechanics', teacher: 'Dr. MD', room: 'SOE H1', image: 'https://via.placeholder.com/80/16A085/ffffff?text=MD' },
+        { time: '10:30-11:25', subject: 'GKC 381', teacher: 'Prof. RJSK', room: 'SOE H1', image: 'https://via.placeholder.com/80/7F8C8D/ffffff?text=RJSK' },
+        { time: '11:25-12:20', subject: 'CCA', teacher: 'CCA Coordinator', room: 'Various', image: 'https://via.placeholder.com/80/95A5A6/ffffff?text=CCA' },
+        { time: '12:20-1:15', subject: 'EEM 303 / EEM 301 Elec. Machines / BE Lab', teacher: 'Prof. TK / GSB', room: 'R7 / SOE H1', image: 'https://via.placeholder.com/80/C0392B/ffffff?text=Lab' },
+        { time: '1:15-2:10', subject: 'MAM 381', teacher: '—', room: 'AH / SOE H1', image: 'https://via.placeholder.com/80/F39C12/ffffff?text=MAM' },
+        { time: '2:10-3:05', subject: 'EEM 303 Elec. Machines', teacher: 'Prof. ACK', room: 'SOE H1', image: 'https://via.placeholder.com/80/D35400/ffffff?text=ACK' }
+    ],
+    SUN: []
+};
         // Homework Data - Load from localStorage
         let homeworkList = JSON.parse(localStorage.getItem('homeworkList')) || [
             { id: 1, subject: 'PHM 281', task: 'Complete Chapter 5 Problems', dueDate: '2025-12-30', completed: false },
